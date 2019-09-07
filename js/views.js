@@ -188,19 +188,19 @@ window.addEventListener("orientationchange", function () {
     'transform': 'translate3d(' + i.toString() + 'px, 0px, 0px)'
   });
 
-  if ($(window).height() < 481) {
-    owlProductsWidth = ($(window).height() - 60) * 10;
+  if ($(window).width() < 481) {
+    owlProductsWidth = ($(window).width() - 60) * 10;
     $(".owl-wrapper-products").css({
       'width': owlProductsWidth.toString() + 'px'
     })
-    owlBlogWidth = (($(window).height() - 50) * 10) + 100;
+    owlBlogWidth = (($(window).width() - 50) * 10) + 100;
     $(".owl-wrapper-blog").css({
       'width': owlBlogWidth.toString() + 'px'
     });
     subtractor = 1;
     blogSubtractor = 1;
-  } else if ($(window).height() < 768) {
-    var multiplier = ($(window).height() - 480) / 2;
+  } else if ($(window).width() < 768) {
+    var multiplier = ($(window).width() - 480) / 2;
     owlProductsWidth = 2100 + (Math.round(multiplier) * 10);
     $(".owl-wrapper-products").css({
       'width': owlProductsWidth.toString() + 'px'
@@ -211,7 +211,7 @@ window.addEventListener("orientationchange", function () {
     });
     subtractor = 2;
     blogSubtractor = 2;
-  } else if ($(window).height() < 992) {
+  } else if ($(window).width() < 992) {
     $(".owl-wrapper-products").css({
       'width': '2300px'
     })
@@ -222,7 +222,7 @@ window.addEventListener("orientationchange", function () {
     });
     subtractor = 3;
     blogSubtractor = 2;
-  } else if ($(window).height() < 1200) {
+  } else if ($(window).width() < 1200) {
     $(".owl-wrapper-products").css({
       'width': '2230px'
     })
@@ -233,7 +233,7 @@ window.addEventListener("orientationchange", function () {
     });
     subtractor = 4;
     blogSubtractor = 3;
-  } else if ($(window).height() < 1301) {
+  } else if ($(window).width() < 1301) {
     $(".owl-wrapper-products").css({
       'width': '2050px'
     })
@@ -277,7 +277,7 @@ window.addEventListener("orientationchange", function () {
     'transform': 'translate3d(' + i.toString() + 'px, 0px, 0px)'
   })
 
-  if ($(window).height() > 991) {
+  if ($(window).width() > 991) {
     $(".ttabout-desc").removeClass("collapse");
     $(".list-unstyled").removeClass("collapse");
     $(".paymentcms").removeClass("collapse");
