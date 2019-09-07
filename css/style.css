@@ -637,6 +637,8 @@ select {
   right: 7px;
   top: 4px;
   z-index: 9;
+  width: 70%;
+  padding-left: 285px;
 }
 
 .menu-category ul.dropmenu li.TT-Sub-List>.dropdown-menu {
@@ -1733,7 +1735,7 @@ footer .follow-us ul li a:focus {
 }
 
 .mega-dropdown-menu li.dropdown>a {
-  margin: 0 0 15px;
+  /* margin: 0 0 15px; */
   position: relative;
 }
 
