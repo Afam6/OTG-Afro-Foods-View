@@ -1754,6 +1754,10 @@ footer .follow-us ul li a:focus {
   color: #222;
 }
 
+.childs_2 {
+  display: block !important;
+}
+
 @media (min-width: 576px) and (max-width: 991px) {
   .footer-container {
     max-width: 100%;
